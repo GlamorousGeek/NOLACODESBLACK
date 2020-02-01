@@ -7,9 +7,9 @@ __OVERVIEW__
 
 __HOW TO GET STARTED__ 
 
-* Item 1 You'll want to use CodePen(https://codepen.io/) to host your projects.
-* Item 2 Come to Github daily for the new project https://github.com/
-* Item 3 Share your work daily for a chance to win tickets to Black Tech NOLA 2020 (Esssence Fest Week) 
+* You'll want to use CodePen(https://codepen.io/) to host your projects.
+* Come to Github daily for the new project https://github.com/
+* Share your work daily for a chance to win tickets to Black Tech NOLA 2020 (Esssence Fest Week) 
 
 After you've created your own piece of Black History use the hashtag #nolacodesblack to be featured in our IG stories Follow @NolavateBlack on IG and like the page on Facebook.
 ![Image of TECHREADY](https://github.com/GlamorousGeek/NOLACODESBLACK/blob/master/TECH%20READY%202020-3.png)
