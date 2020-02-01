@@ -1,3 +1,8 @@
-Lets start the challenge off simple. 
+Lets start the challenge off simple, we're going to use codepen to build our projects as it is a code editor and it has separate windows for HTML5/CSS3/Javascript this will be helpful while you learn.
 
 For those of you who have never attempted to code you're going to make 3 circles. For those of you who are feeling a bit adventurous you're going to turn the 3rd circle into an animated ball.
+
+__HTML__ 
+You're going to build 2 circles and 1 ball. 
+* In the HTML block you're going to start defining your You will do that by typing <span class="circle"></span> you will do this twice.
+* Third entry will be to add the ball it looks like this <span class="ball"></span>
