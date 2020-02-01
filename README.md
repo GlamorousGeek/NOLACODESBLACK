@@ -5,4 +5,5 @@ This challenge is to gain some coding experience. Goal is to spend everyday in F
 
 You'll want to use CodePen(https://codepen.io/) to host your projects.
 
-After you've created your own piece of Black History use the hashtag #nolacodesblack to be featured in our IG stories FOllow @NolavateBlack on IG and like the page on Facebook
+After you've created your own piece of Black History use the hashtag #nolacodesblack to be featured in our IG stories Follow @NolavateBlack on IG and like the page on Facebook
+![Image of TECHREADY](https://github.com/GlamorousGeek/NOLACODESBLACK/blob/master/TECH%20READY%202020-3.png)
