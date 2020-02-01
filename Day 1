@@ -6,3 +6,57 @@ __HTML__
 You're going to build 2 circles and 1 ball. 
 * In the HTML block you're going to start defining your You will do that by typing <span class="circle"></span> you will do this twice.
 * Third entry will be to add the ball it looks like this <span class="ball"></span>
+
+
+
+<!-- this is the 1st in the NOLACodesBlack 29 days of code challenge--> 
+
+<span class="circle"></span>
+<span class="circle2"></span>
+<div class="ball"></div>
+
+<!--The above code will set the frame work for 3 nice round circles --> 
+
+Now in the CSS block you're going to build, color and animate your circles and turn the 3rd circle into a ball. to do so you're go do the steps below.:
+.circle{
+  height: 180px;
+  width: 180px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+<!-- One circle should now appear on the screen. Now you'll want to build another block of code just like this one.-->
+
+In your 3rd block you want to define the circle as a ball like so:
+
+.ball{
+  height: 180px;
+  width: 180px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+Now you're going to learn to animate the ball. Animation comes by adding Keyframes to your code in the CSS block. For more informatio on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 200px, 0); }
+}
+
+/* Prefix Support */
+ball {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+}
+
+Here's what the finished projject should look like https://codepen.io/GlamorousGeek/pen/yLydWbp
+Now if you followed the steps correctly you should have a set of bouncing balls! Don't for get to tag @NolavateBlack whe you share and use the hashtag #NOLACodesBlack to be featured 
