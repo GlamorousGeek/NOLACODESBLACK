@@ -1,10 +1,10 @@
 Lets start the challenge off simple, we're going to use codepen to build our projects as it is a code editor and it has separate windows for HTML5/CSS3/Javascript this will be helpful while you learn.
 
-For those of you who have never attempted to code you're going to make 3 circles. For those of you who are feeling a bit adventurous you're going to turn the 3rd circle into an animated ball.
+For those of you who have never attempted to code you're going to make 3 circles. The basic challenge is to change the color of the circles to red, black and green. If you need help reach out to the coach in the slack channel during coaching hours. For those of you who are feeling a bit adventurous you're going to turn the 3rd circle into an animated ball.
 
-__HTML__ 
+HTML 
 You're going to build 2 circles and 1 ball. 
-* In the HTML block you're going to start defining your You will do that by typing <span class="circle"></span> you will do this twice.
+* In the HTML block you're going to start defining your circle. You will do that by typing <span class="circle"></span> you will do this twice.
 * Third entry will be to add the ball it looks like this <span class="ball"></span>
 
 
@@ -17,7 +17,9 @@ You're going to build 2 circles and 1 ball.
 
 <!--The above code will set the frame work for 3 nice round circles --> 
 
-Now in the CSS block you're going to build, color and animate your circles and turn the 3rd circle into a ball. to do so you're go do the steps below.:
+Now in the CSS block you're going to build, color and animate your circles (adventerous people here is where you will turn the 3rd circle into a ball).  
+
+To do so you're go do the steps below.:
 .circle{
   height: 180px;
   width: 180px;
@@ -25,9 +27,9 @@ Now in the CSS block you're going to build, color and animate your circles and t
   border-radius: 50%;
   display: inline-block;
 }
-<!-- One circle should now appear on the screen. Now you'll want to build another block of code just like this one.-->
+<!-- One circle should now appear on the screen. Now you'll want to build two additional blocks of code just like this one.-->
 
-In your 3rd block you want to define the circle as a ball like so:
+For the adventerous in your 3rd block you want to define the circle as a ball like so:
 
 .ball{
   height: 180px;
@@ -58,5 +60,6 @@ ball {
   to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
 }
 
-Here's what the finished projject should look like https://codepen.io/GlamorousGeek/pen/yLydWbp
-Now if you followed the steps correctly you should have a set of bouncing balls! Don't for get to tag @NolavateBlack whe you share and use the hashtag #NOLACodesBlack to be featured 
+Here's what the finished project should look like for the adventerous https://codepen.io/GlamorousGeek/pen/yLydWbp
+
+Now if you followed the steps correctly you should have two circles that flow into a bouncing ball! Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
