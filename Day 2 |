@@ -1,0 +1,95 @@
+Welcome to day two of the NOLA Codes Black Challenge! Again we're working with shapes and animations. We'll be working with curves today let's get started.  
+
+HTML 
+You're going to build 2 curves and 1 5-pointed star. 
+* In the HTML block you're going to start defining your curves. You will do that by typing <div class="curve"></div> you will do this twice.
+* You will then add the div class for the 5-pointed star it will look like this <div class="star-five"></span>
+
+<!-- this is the 1st in the NOLACodesBlack 29 days of code challenge--> 
+
+<div class="curves"></div>
+<div class="star-five"></div>
+<div class="curves2"></div>
+
+<!--The above code will set the frame work for the project --> 
+
+Now in the CSS block you're going to build, color and animate the project (adventerous people here is where you can stand out by adding the reverse rotation to the last curve).  
+
+You're going to do the steps below.:
+ .curve{
+      width: 160px;
+      height: 160px;
+      border-radius: 75%;
+      box-shadow: 15px 15px 0 0 purple;
+          }
+<!-- One curve should now appear on the screen. Now you'll want to build two additional blocks of code just like this one.-->
+
+
+star-five {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: gold;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid gold;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+    .star-five:before {
+      border-bottom: 80px solid gold;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    .star-five:after {
+      position: absolute;
+      display: block;
+      color: gold;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid gold;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+Now you're going to learn to animate the curve. Animation comes by adding Keyframes to your code in the CSS block. For more informatio on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+
+.curve{
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {transform: rotate(0deg); }
+  to {transform: rotate(359deg);}
+}
+
+/* Prefix Support */
+.curve2{
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-direction: reversw;
+  -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotation {
+  from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+  to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+}
+For the adventerous of you you'll want to go to WS3 Schools to learn how to reverse the animation. 
+
+Here's what the finished project should look like https://codepen.io/GlamorousGeek/pen/dyPxZER
+
+Now if you followed the steps correctly you should have two curves that circle the 5-pointed star. Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
