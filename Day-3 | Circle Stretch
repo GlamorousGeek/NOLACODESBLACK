@@ -1,0 +1,68 @@
+Welcome to day three of the NOLA Codes Black Challenge! We're working with circles and animations again! We're building upon our newly acquired skills let's get started.  
+
+<!-- this is the 1st line of code in this NOLACodesBlack 29 days of code challenge--> 
+
+HTML 
+You've created a circle before, do you remember how to set the stage in html for this? Here's a hint <div class "xxxx"></div>  
+* Go ahead a fill in the blanks in the HTML block. 
+
+<!--The above code will set the frame work for the project --> 
+
+Now in the CSS block you're going to build, color and animate the project (adventerous people here is where you can stand out by adding the reverse stretch. Hint look at day 2's project for help).  
+
+Before you build your circle today you're going to learn how to center your object, define the height.
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+<!--The above code will set the height and alignment for the project --> 
+
+Now you want to define the circle
+
+.circles {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: black;
+<!--The above code will build the circle --> 
+
+Now you're going to learn to animate the circle. Animation comes by adding Keyframes to your code in the CSS block. For more informatio on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+
+
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(2.5) rotate(90deg);
+    background-color: green;;
+  }
+}
+For the adventerous of you you'll want to go to WS3 Schools to learn how to reverse the animation. 
+
+Here's what the finished project should look like https://codepen.io/GlamorousGeek/pen/JjdPyMN
+
+Now if you followed the steps correctly you should have a circle that stretches to a rounded cube and back. Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
+
