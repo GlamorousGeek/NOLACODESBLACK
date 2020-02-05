@@ -1,0 +1,45 @@
+Look at you, you made it to day 4 of the NOLA Codes Black Challenge (If it's your 1st day don't worry you can cattch up.)!  We're we're learning a new shap today but we're still working on animating those shapes. When we're done you're gonna be on your way to front end dev skills.
+
+<!-- this is the 1st line of code in this NOLACodesBlack 29 days of code challenge--> 
+
+HTML 
+Let's set the framework for a parallelogram! Yes we said parallelogram...haha. <div class "parallelogram"></div>  
+* Go ahead a fill in the blanks in the HTML block. 
+
+<!--The above code will set the frame work for the project --> 
+
+Now in the CSS block you're going to build, color and animate the project (adventerous people here is where you can stand out by adding a replay of the annimation Hint look at W3Schools for help).  
+
+Yesterday you learned how to center your object and define the height do that now. Nope we're not provideing the code for that today but if you get stuck look at your code from yesterday. Now that you've framed that up let's buid a parallelogram!
+
+ .parallelogram{
+    width: 300px;
+    height: 100px;
+    transform: skew(20deg);
+    background: #66d9ff;
+    
+<!--The above code will build the circle -->
+
+
+Now you want to set the positioning, duration and path of the parallelogram.
+   
+    position: relative;
+    animation-name:parallelogram;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;}
+
+ <!--The above code will set functions of the parallelogram. For the adventerous check out W3Schools to add the replay and for how many times you want it to slide in. --> 
+
+Since we've never changed the color at the end of our animation before we're going to give you that code below.
+
+@keyframes parallelogram{
+  from {top: 0px;}
+  to {top: 200px; background-color: gold;}
+}
+
+For more information on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+
+Here's what the finished project should look like https://codepen.io/GlamorousGeek/full/dyobqOR
+
+Now if you followed the steps correctly your parallelogram should slide in and change colors. Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
+
