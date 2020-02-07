@@ -1,0 +1,60 @@
+Look at you, you made it to day 5 or day 6 if you count the sign up day...anyhoo of the NOLA Codes Black Challenge (If it's your 1st day don't worry you can cattch up.)!  We're learning a new shape today everything you've learned so far will help in your front end game.
+
+HTML 
+Time to frame out our Black shield <div class "Shield"></div>. Now I want you to center the shield in the middle of the page do you remember how to do that? If not refer back to one of the earlier challenges. We're going to add some text to the project this time so add <h1> Nola Codes Black Challenge</h1>  
+* Go ahead a fill in the blanks in the HTML block. 
+
+<!--The above code will set the frame work for the project --> 
+
+Now in the CSS block you're going to build, color and animate the project (adventerous people here is where you can stand out make the shield change colors or add a design to it).  
+
+You're a few days into the challenge so it's time to apply the tricks you've learned so far, so no we're not provideing the code for you to center the project today either but if you get stuck look at your code from yesterday. Time to build the shield.
+
+ .shield {
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-bottom: 20px solid black;
+      position: relative;
+      top: -50px;
+    }
+    .shield:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top: 70px solid black;
+    }
+    
+<!--The above code will build the sheild -->
+
+Since we've never used the blink animation before we're going to give you that code below.
+   
+   .shield{
+      animation: blink 2s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+ <!--The above code will set functions of the shield. --> 
+
+
+
+
+For more information on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+
+Here's what the finished project should look like https://codepen.io/GlamorousGeek/pen/zYxgpgp
+
+Now if you followed the steps correctly you have a blinking black shield. Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
