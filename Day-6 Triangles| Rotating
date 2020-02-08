@@ -1,1 +1,44 @@
+We've been at this 6 days now y'all. How are you feeling? Do you feellike you've learned a lot? Well you have! Let'sget busy, layering some of those skills today.
 
+<!-- this is the 1st week in the NOLACodesBlack 29 days of code challenge--> 
+HTML 
+
+* In the HTML block you're going to start defining your your triangles. You will do that by typing <div class="triangle"></div> you will do this three times. Youre also going to add the header(title) here too. That looks like this <h1> >#NOLACodesBlack  * Rotating Triangles*</h1>  You're go to put a small bbreak in between the triangles you'll do that by adding this code <br> . To ensure you're learning and not just copying and pasting we're only giving you the code for the 1st triangle but if you use the tools at WS3shools and your previous work you'll be just fine.
+
+
+<h1>#NOLACodesBlack  * Rotating Triangles*</h1> 
+
+<div class="triangle-up"></div>
+<br>
+<br>
+<div class="triangle-right"></div>
+
+<!--The above code will set the frame work for the triangles --> 
+
+Now in the CSS block you're going to build, color and animate your triangles (adventerous people here is where you can stand out by adding a 2nd animation)
+
+h1{text-align:center;}
+.triangle-up {
+	width: 0;
+	height: 0;
+  border-left: 125px solid transparent;
+	border-right: 125px solid transparent;
+	border-bottom: 250px solid red;
+}
+.triangle-up:hover {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  
+  transform: rotate(90deg);
+  transition: 300ms linear all;
+}
+<!-- One Triangle should now appear on the screen. Now you'll want to build two additional blocks of code simialar this one.-->
+
+
+Here's what the finished project should look like for the adventerous https://codepen.io/GlamorousGeek/full/qBdBwzj
+
+Now if you followed the steps correctly you should have three rotating triangles! Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
+© 2020 GitHub, Inc.
