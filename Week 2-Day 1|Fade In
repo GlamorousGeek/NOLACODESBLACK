@@ -1,0 +1,86 @@
+Lets start week 2 of the challenges! We're going to use codepen to build our projects as it is a code editor and it has separate windows for HTML5/CSS3/Javascript this will be helpful while you learn.
+
+For those of you who have never attempted to code you're going to make 3 circles. The basic challenge is to Create an RBG Flag and make it fade in on load. For those of you who get the hang of things, try making it fade out on hover of the mouse if you can!
+
+HTML 
+You're going to build 3 identical DIVs. 
+* In the HTML block you're going to start defining your DIV. You will do that by typing <div class="block"></div> .
+    You will do this three times, naming the 2nd and 3rd div classes "block2" and "block3", respectively.
+
+<!-- this is the 10th in the NOLACodesBlack 29 days of code challenge--> 
+
+<div class="block"></div>
+<div class="block2"></div>
+<div class="block3"></div>
+
+<!--The above code will set the frame work for the 3 blocks of our flag --> 
+
+Now in the CSS block you're going to build, color and animate your rectangles.  
+
+To do so you're go do the steps below.:
+.block {
+  height: 80px;
+  width: 400px;
+  background-color: red;
+  display: block;
+}
+<!-- The top block should now appear on the screen. Now you'll want to build two additional blocks of code just like this one. Be sure to reference the proper class names -->
+
+To prepare for our CSS transition (fade in), lets assign an ID property to our DIVs.
+
+Return to the HTML block an define an ID property so each div has the same ID.
+It should look like this:
+
+<div class="block" id="colors"></div>
+
+Now you're going to learn to create CSS Transitions. A transition can be created by adding Keyframes to your code in the CSS block. For more informatio on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp
+
+Here, we can invoke our animation and pass in an argument that describes how we want them to behave on the 4 most popular web browser at this time.
+We have also declared a catch-all for any other browsers that we haven't specified (which includes headless browsers).
+
+#colors {
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s; /* Firefox < 16 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  -o-animation: fadein 6s; /* Opera < 12.1 */
+  animation: fadein 6s; /* Catch-all, headless */
+}
+
+Now, let's declare & define our fadein function that we have invoked above by using the @keyframes CSS annotation.
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+CSS opacity is defined on a scale of 0.0 - 1.0 . Play with the opacity levels to see how the fade-in effect changes.
+Congrats if you've gotten this far!
+
+Here's what the finished project should look like - https://codepen.io/eddiesmithjr/pen/Exjjvdx
+
+Now if you followed the steps correctly you should have an RBG flag that fades in on page load! Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
+F
