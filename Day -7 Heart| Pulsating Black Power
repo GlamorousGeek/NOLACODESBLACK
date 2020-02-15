@@ -1,0 +1,154 @@
+Lets finish the 1st week of the challenge off strong! You've learned a lot this week building out shapes and working with different animations. Well let's try using 2 different animations in one project.
+
+The basic challenge is to code the words "Black Power" red and green on a black canvas and make it blink. Now you will make a portion of the words blink at a different time and pace than the rest of the letters. If you need help reach out to the coach in the slack channel during coaching hours. For those of you who are feeling a bit adventurous you're going to create a shield  with the Pan African colors and a pulsating heart beat as well.
+
+HTML 
+You're going to code "Black Power" after a week of coding we're not going to provide that code (if you get stuck review one of your earlier projects). 
+* If you're adding the shield in the HTML block you're going to start defining the shield. You will do that by typing <div class="first- circle"></div> you will do this four times.
+* The next entry will be to add the heart it looks like this <div class="heart"></div>
+
+
+
+<!-- this is the 1st in the NOLACodesBlack 29 days of code challenge--> 
+
+<!--The code below will start the blinking Black Power sign --> 
+
+To do so you're go do the steps below.:
+body { background-color: #111111; }
+div {
+  padding: 40px;
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 80px neongreen,0 0 30px Lightgreen,0 0 6px Darkgreen;
+  color: lime;
+}
+div p { margin:0; }
+#Black:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #00ff00,0 0 6px #00ff00; }
+#code:hover { text-shadow: 0 0 100px #ffffff,0 0 40px #00ff00,0 0 8px #00ff00; }
+#Black {
+  color: Red;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+#Black span {
+  animation: upper 11s linear infinite;
+}
+#Code span:nth-of-type(1) {
+  animation: lower 10s linear infinite;
+}
+#Code span:nth-of-type(2) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px Darkgreen,0 0 30px Lightgreen,0 0 6px Darkgreen;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+
+<!--Are you excited about seeing the words"Black Power" in lights? You don't have to have the letters flashing exactly like mines play with it!  -->
+
+Now further down in the CSS block you're going to build, color and animate your shield (adventerous people here is where you will build the shield and the pulsating heart).
+
+
+ 
+<!-- One circle should now appear on the screen. Now you'll want to build two additional blocks of code just like this one.-->
+
+For the adventerous in your 3rd block you want to define the circle as a ball like so:
+
+[class*="circle"] {
+  border-radius:50%;
+}
+.first-circle {
+  margin:auto;
+  display:flex;
+  background: red;
+  height:600px;
+  width:600px;
+  align-items: center;
+  justify-content: center;
+ }
+.second-circle {
+  display:flex;
+  background: black;
+  height:500px;
+  width:500px;
+  align-items: center;
+  justify-content: center;
+  }
+.third-circle {
+  display:flex;
+  background: green;
+  height:400px;
+  width:400px;
+  align-items: center;
+  justify-content: center;
+ }
+.fourth-circle {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  height:300px;
+  width:300px;
+}
+
+Now you're going to learn to add the heart and animate it. As you've learned animation comes by adding Keyframes to your code in the CSS block. For more information on how to build the Keyframe function from scratch go here https://www.w3schools.com/css/css3_animations.asp 
+.heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: gold;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+@keyframes heart {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.heart {
+    animation-name: heart;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+Here's what the finished project should look like for the adventerous https://codepen.io/GlamorousGeek/pen/qBdEmBm
+
+Now if you followed the steps correctly you should have two circles that flow into a bouncing ball! Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
+
+
