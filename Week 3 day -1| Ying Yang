@@ -1,0 +1,93 @@
+Welcome to week 3 of the 29 Day coding challenge! We're using codepen to build our projects as it is a code editor and it has separate windows for HTML5/CSS3/Javascript this will be helpful while you learn.
+
+If you're just getting stargted with the challenge and want to take it easy just do the first part of the project which will be to code the ying yang symbol. 
+
+<!--To build the body of the symbol follow the coding steps below--->
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --width: 48px;
+    --height: 48px;
+    --fgcolor: black;
+    --bgcolor: #eee;
+}
+
+#yin-yang {
+    width: calc(var(--width) * 8);
+    height: calc(var(--height) * 4);
+    background: var(--bgcolor);
+    border-color: var(--fgcolor);
+    border-style: solid;
+    border-width: calc(var(--width) / 6) calc(var(--width) / 6) calc((var(--width) / 6) + (var(--width) * 4)) calc(var(--width) / 6);
+    border-radius: 100%;
+    position: relative;
+    box-sizing: content-box;
+}
+
+#yin-yang:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--bgcolor);
+    border: calc(var(--width) * 1.5) solid var(--fgcolor);
+    border-radius: 100%;
+    width: var(--width);
+    height: var(--height);
+    box-sizing: content-box;
+}
+
+#yin-yang:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--fgcolor);
+    border: calc(var(--width) * 1.5) solid var(--bgcolor);
+    border-radius: 100%;
+    width: var(--width);
+    height: var(--height);
+    box-sizing: content-box;
+}
+
+<!---- Now for those of you who participated in the earlier projects here's where it gets fun and you add the animation-->
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+Going to add a challenge for you veteran #NOLACODESBlack participants let's add some color to the NOLACODESBlack hashtag! 
+
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
+Here's what the finished project should look like - https://codepen.io/GlamorousGeek/pen/JjdKevb
+
+Now if you followed the steps correctly you should have should have the ying/yang symbol your NOLACODESBLack hashtag should be rainbow colored! Don't forget to tag @NolavateBlack when you share and use the hashtag #NOLACodesBlack to be featured on IG.
